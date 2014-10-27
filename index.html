@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Octocat</title>
+	<link rel="stylesheet" href="octoSplat.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body>
+ <div class="documentation">
+ 	<h1>Welcome to the OctoCat-Splat Plug-In</h1>
+ 	
+ 	<div class="block">
+ 	    <h2>WHAT DOES THIS PLUG-IN DO</h2>
+ 		<p>'OctoCat-Splat' is a jQuery plugin <em>reload</em> button. But not just any reload button - it's funny-looking Octocat animating across your browser window, while simultaneously "inking" the page until the screen is black! Oh, and following a page-reload, of course. The image of Octocat is a PNG and the ink-blots is a SVG. The user has an option to change the color of the SVG color fill in the CSS file, as well as change the two images if they wish to.</p> 
+ 	</div>
+ 	
+ 	<div class="block">
+ 		<h2>HOW TO IMPLEMENT IT</h2>
+ 		
+ 		<h4>Download the following files</h4>
+ 		<ul>
+ 			<li><a href="">octoSplat.js</a></li>
+ 			<li><a href="">octoSplat.css</a></li>
+ 		</ul>
+		<p>Once you have included these files into your own working folders, be sure to include a script tag in your HTML file, right before your closing body tag with the appropriate path to the folder you have stored the plug-in file. See example below.
+		</p>
+		<pre>&lt;script src="octoSplat.js"&gt;&lt;/script&gt;</pre>
+		
+		<h4>Set an id to your reload button tag in your HTML file like so and you can style it however you like!</h4>
+		<pre>&lt;button id="reloadButton"&gt;Reload&lt;/button&gt;</pre>
+ 	</div>
+
+ 	<div class="block">
+ 		<h2>OPTIONS</h2>
+ 		<h4>SVG Fill Color</h4>
+ 		<p>You can also change the fill on the SVG ink-blots. The default fill colour is set to black but it can be overwritten in the SVG path, giving a the fill property a different color value. the path can be found in the octoSplat.js file.</p>
+ 		<pre>var $ink = $('&lt;svg fill="black" xmlns="http://www.w3.org/2000/svg"...&gt;)</pre>
+ 		<p></p>
+ 	</div>
+	
+	<div class="block">
+	<h2>TRY IT</h2>
+		
+	<button id="reloadButton">CLICK ME</button>
+	</div>
+
+ </div><!--/.documentation-->
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<script src="octoSplat.js"></script>	
+
+	<script src="main.js"></script>
+</body>
+</html>
